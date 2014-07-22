@@ -1,5 +1,5 @@
 <?php
-    include '../CapaDatos/Sliders.php';
+    include '../Model/Sliders.php';
     
     $ref = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : 0;
     if($ref){
