@@ -1,0 +1,8 @@
+[user]
+    name = Carlos Zúñiga
+    email = krlos2290@gmail.com
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
