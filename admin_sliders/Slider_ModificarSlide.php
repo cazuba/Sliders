@@ -16,6 +16,14 @@ if(count($searched)>0 || !$edit){
         $subir->__set('_dest',  getcwd() . "/../images/sliders/");
         
 	$advice = $subir->init($_FILES['url_imagen']);
+        /* ELIMINAR IMAGEN EXISTENTE DEL SERVIDOR */
+        if($searched['url_imagen']!=""){
+            $tmp_arr_image = explode("/", $searched['url_imagen']);
+            $name = $tmp_arr_image[count($tmp_arr_image)-1];
+            $file_image = dirname(getcwd()).DIRECTORY_SEPARATOR."images".DIRECTORY_SEPARATOR."sliders".DIRECTORY_SEPARATOR.$name;
+            @unlink($file_image);
+        }
+        /* FIN ELIMINAR IMAGEN ANTERIOR */
         $nombre_nueva_imagen = "images/sliders/".$subir->__get("_name");
     }else{
         if(!$edit)
