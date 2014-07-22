@@ -19,7 +19,7 @@ class Conexion {
         $this->BaseDatos = "";
         $this->Servidor = "localhost";
         $this->Usuario = "root";
-        $this->Clave = "yuplon";
+        $this->Clave = "";
         /***************************************/
         
         /* Produccion ***************************
