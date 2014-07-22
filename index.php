@@ -1,12 +1,17 @@
 <?php
 	include "model/Sliders.php";
 	$sliders = new Sliders();
-	$array_sliders = $sliders->getSlidersTodos();4
+	$array_sliders = $sliders->getSlidersTodos();
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
+                <!-- STYLES -->
 		<link rel="stylesheet" href="css/slider.css" media="screen"/>
-		<script src="js/jquery.tools.min.js"></script>
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		
+                <!--JQUERY js-->
+                <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="js/class.slider.js"></script>
 		 <script type="text/javascript">
 			var slider = new CallSlider();
@@ -24,7 +29,7 @@
 		  </script>
 	</head>
 	<body>
-		<?php if( count($array_sliders)>0 && isset($_REQUEST['testing_banner'])):?>
+		<?php if( count($array_sliders)>0):?>
 		  <div id="background-slider">
 			  <div id="slider">
 				  <?php foreach ($array_sliders as $slide):?>
