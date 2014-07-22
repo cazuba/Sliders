@@ -23,6 +23,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width  initial-scale=1.0 maximum-scale=1.0 user-scalable=yes">
+        <meta name="author" content="Carlos Zúñiga | GN Digital">
         <meta name="description" content="">
         <meta name="keywords" content="">
         <title>Administrador</title>
@@ -34,8 +36,8 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br><br></div>
+            <div class="page-header">
+                <h1>Administrador </h1>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -43,7 +45,7 @@
                     <!--Sliders-->
                     <div class="panel panel-info">
                         <div class="panel-body">
-                            <legend>Banners Home</legend>
+                            <legend>Banners</legend>
                             <p><a href="modificar_slider.php?edit=0">Agregar Banner en el Home</a></p>
                             <span id="result_delete" style="display: none;"></span>
                             <div class="table-responsive">
