@@ -1,0 +1,16 @@
+/* ESTILOS SLIDER */
+#background-slider{background: #212121;color:#FFF;;float: left;margin:0;padding: 0;display: inline;vertical-align: baseline;width: 100%;}
+#slider{vertical-align: baseline;position: relative; margin: 25px 0;padding: 10px 0;float: left;width: 100%;display: -webkit-box;z-index: 999;
+
+}
+#slider .box {float: left;margin: 0 5%;padding: 0;/*border: 1px solid #00E;*/height: 300px;width: 90%;position: relative;left: 0;z-index: 2;cursor: pointer;}
+#slider .box *{max-width: 90%; max-height: 300px;margin: 0 auto;float: none;display: block;}
+#slider .box img{border-radius: 4px;}
+#slider .pointers {position: absolute;bottom: -10px;left: 0;margin: 0;text-align: center;width: 100%; }
+#slider .pointers span { padding: 1px 7px;margin-top:10px;margin-left: 5px;cursor: pointer;}
+/*#slider .pointers .active { background: url(theme/image/sliders/point_active.png) top no-repeat; }*/
+#slider .wrapper-handler{position: absolute;left:0;top: 44%;width: 100%;margin: 0;z-index: 1000;font-size: 14px;font-weight: bold;/*opacity: 0;*/}
+/*#slider .wrapper-handler:hover {opacity: 0.5;}*/
+#slider .wrapper-handler .previous {float: left;cursor: pointer;margin-left: 10px;}
+#slider .wrapper-handler .next {position: absolute;right: 0;cursor: pointer;margin-right: 10px;}
+/* FIN ESTILOS SLIDER*/

@@ -6,9 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Sliders : Banners rotativos de izquierda a derecha, dinámicos (BD) y administrador del Slider (banners)">
 
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="css/slider.css" media="screen"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Sliders</title>
+    <!--JQUERY js-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/class.slider.js"></script>
+     <script type="text/javascript">
+            var slider = new CallSlider();
+            $(document).ready(function(){
+                    $(window).change(function(){
+                            slider.init();
+                    });
+                    $(".pointers span").each(function(index, item){
+                            $(item).click(function(){
+                                    slider.setSlide(index);
+                            });
+                    });
+                    slider.init();
+                    $(window).resize(function(){
+                        console.log("Resized");
+                        slider.resetSlider();
+                    });
+            });
+    </script>
   </head>
 
   <body>
@@ -27,11 +52,54 @@
             </section>
         </header>
     </div>
+    <br/><br/>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <div id="background-slider">
+                        <div id="slider">
+                            <div class="box">
+                                <img src="images/sliders/20140722082157.jpg" onclick="top.location.href=''" />
+                            </div>
+                            <div class="box">
+                                <img src="images/sliders/20140805034713.jpg" onclick="top.location.href=''" />
+                            </div>
+                            <div class="box">
+                                <img src="images/sliders/20140912055933.jpg" onclick="top.location.href=''" />
+                            </div>
+                            <div class="box">
+                                <img src="images/sliders/20140912060112.jpg" onclick="top.location.href=''" />
+                            </div>
+                            <div class="box">
+                                <img src="images/sliders/20140912061335.jpg" onclick="top.location.href=''" />
+                            </div>
+                            <div class="box">
+                                <img src="images/sliders/20140912061430.jpg" onclick="top.location.href=''" />
+                            </div>
 
-    <!-- MAIN CONTENT -->
+                          <div class="pointers">    
+                                <span class="fa fa-circle-o"></span>
+                                <span class="fa fa-circle-o"></span>
+                                <span class="fa fa-circle-o"></span>
+                                <span class="fa fa-circle-o"></span>
+                                <span class="fa fa-circle-o"></span>
+                                <span class="fa fa-circle-o"></span>
+                          </div>
+
+                          <div class="wrapper-handler">
+                                  <div class="previous" onclick="slider.previous();"><i class="fa fa-chevron-left"></i></div>
+                                  <div class="next" onclick="slider.next();"><i class="fa fa-chevron-right"></i></div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+    <!-- MAIN CONTENT 
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-          <img src="https://github.com/cazuba/Sliders/blob/master/capture.JPG" class="img-responsive" style="width: 100%;"/>
         <h3>
             <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.
         </h3>
