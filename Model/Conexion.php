@@ -16,7 +16,7 @@ class Conexion {
 
     function  Conexion() {
         /* Local ******************************/
-        $this->BaseDatos = "";
+        $this->BaseDatos = "banners";
         $this->Servidor = "localhost";
         $this->Usuario = "root";
         $this->Clave = "";

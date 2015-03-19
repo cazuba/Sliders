@@ -1,9 +1,9 @@
 <?php
     session_start();
-    if( !isset($_SESSION['user']) || (isset($_SESSION['user']) && empty($_SESSION['user'])) ){
+    /*if( !isset($_SESSION['user']) || (isset($_SESSION['user']) && empty($_SESSION['user'])) ){
         header("location:login.php");
         exit;
-    }
+    }*/
     $edit = isset($_REQUEST['edit']) ? $_REQUEST['edit'] : 1;
     include_once '../Model/Sliders.php';
     if(isset($_REQUEST['sel']) && $_REQUEST['sel']=="save"){
