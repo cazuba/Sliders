@@ -4,5 +4,5 @@ Banners rotativos de izquierda a derecha, dinámicos (BD) y administrador del Sl
  ![Example Image](capture.JPG)
  
  ----------------------------------------------------------------------------------------------
- #Admin panel
+ # Admin panel
  ![Example Image](capture_2.JPG)
