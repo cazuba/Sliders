@@ -16,10 +16,21 @@
         this.canslide=true;
         
         var _self=this;
+        this.reseting = 0;
+        
         this.init = function(time_to_wait){
             setTimeout(function(){
                 _self._init(time_to_wait);
             },500);
+        };
+        this.resetSlider = function(){
+            if(this.reseting) return;
+            this.reseting=1;
+            this.time=null;
+            _self.initialized = 0;
+            _self._init(_self.TIME_WAITING);
+            this.reseting = 0;
+            
         };
         this._init = function (time_to_wait){
             time_to_wait = time_to_wait || 10;
@@ -30,6 +41,7 @@
             if( _self.initialized==0 ){
                 $("#"+_self.id_slider+" > .pointers > span:first-child").addClass("fa-circle");
                 _self.initialized=1;
+                _self.setSlide(0);
                 _self.start();
             }
         };

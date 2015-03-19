@@ -1,5 +1,5 @@
 /* ESTILOS SLIDER */
-#background-slider{background: #FFF;float: left;margin:0;padding: 0;display: inline;vertical-align: baseline;width: 100%;}
+#background-slider{background: #212121;color:#FFF;;float: left;margin:0;padding: 0;display: inline;vertical-align: baseline;width: 100%;}
 #slider{vertical-align: baseline;position: relative; margin: 25px 0;padding: 10px 0;float: left;width: 100%;display: -webkit-box;z-index: 999;
 
 }
