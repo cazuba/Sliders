@@ -1,5 +1,8 @@
 Sliders
 =======
+
+# [Sliders DEMO] (http://cazuba.github.io/Sliders)
+
 Creando nuestro propio Slider de banners para un Homepage!
 
 Necesitamos:
